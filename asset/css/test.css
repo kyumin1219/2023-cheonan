@@ -1,0 +1,13 @@
+*{padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box; line-height: 1.5em;}
+body{width: 100%;}
+section {position: relative;}
+label{cursor: pointer;}
+a, button{border: none; cursor: pointer ; text-decoration: none; border: none;}
+li, ul{list-style: none;}
+
+/* 레이아웃 */
+.f, .fc, .fb, .fe{display: none;}
+.fb{justify-content: space-between;}
+.fc{justify-content: center;}
+.fe{justify-content: end;}
+

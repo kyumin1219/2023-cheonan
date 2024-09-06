@@ -1,0 +1,82 @@
+*{padding: 0; margin: 0; box-sizing: border-box; line-height: 1.5em;scroll-behavior: smooth;}
+body{width: 100%;}
+label{cursor:pointer;}
+section{position: relative;}
+a, button{border: none; cursor:pointer; text-decoration: none; display: inline-block; color: black;}
+li, ul{list-style: none;}
+.index input{display: none;}
+/* 레이아웃 */
+.container{ width: 70vw; position: relative;margin: 0 auto;}
+.f, .fb, .fc, .fe{display: flex;}
+.fb{justify-content: space-between;}
+.fc{justify-content: center;}
+.fe{justify-content: end;}
+.hc{align-items: center;}
+/* 정렬 */
+.r{display: flex;flex-flow: column;}
+.re {display: flex;flex-flow: column; justify-content: end;}
+.rc{display: flex;flex-flow: column;justify-content: center;}
+.cc {display: flex;flex-flow: column; justify-content: center; align-items: center;}
+
+/* 1vw = 19px */
+/* 75vw = 1440px */
+.mts{margin-top: .25vw;}
+.mt1{margin-top: .5vw;}
+.mt2{margin-top: 1vw;}
+.mt3{margin-top: 1.5vw;}
+.mt4{margin-top: 2vw;}
+.mt5{margin-top: 2.5vw;}
+.mt6{margin-top: 3vw;}
+.mt7{margin-top: 3.5vw;}
+.mt8{margin-top: 4vw;}
+.mt9{margin-top: 4.5vw;}
+.mt10{margin-top: 5vw;} 
+.mt20{padding-top: 4vw;padding-bottom: 4vw;}
+.mtm20{margin-top: 8vw;}
+
+/* 제목 ( C모듈 ) */
+/* div.title {width: 100%; height: 80px;position: relative;}
+div.title .line{top: 50%; transform: translateY(-50%); height: 2px; background-color: #434343; position: absolute;}
+div.title .text{top: 50%; left: 50%;position: absolute; transform: translate(-50%, -50%); color: #434343; font-family: "Myriad Pro"; font-weight: bold;}
+div.title .line:first-child{left: 0;}
+div.title .line:last-child{right: 0;} */
+
+/* 폰트 */
+.title2{font-size: 3.8vw; color: #282c7c; font-family: "impact"; font-weight:400;}
+.title3{font-size: 32px; color: #3b65ff; font-family: "impact"; font-weight:400;}
+.kr{font-family: "맑은 고딕" !important;}
+.f60 {font-size: 3.5vw; letter-spacing: -2px;font-family: "Myriad-Pro"; font-weight: bold;}
+.f30 {font-size: 1.6vw; letter-spacing: -2px;font-family: "Myriad-Pro"; font-weight: bold;}
+.f28 {font-size: 1.4vw; letter-spacing: -1px;font-family: "Myriad-Pro"; font-weight: bold;}
+.f24 {font-size: 1.2vw; letter-spacing: -1px;font-family: "Myriad-Pro"; font-weight: bold;}
+.f21 {font-size: 1vw; letter-spacing: -1px;font-family: "Myriad-Pro"; font-weight: bold; }
+.f18 {font-size: .9vw; letter-spacing: -1px;font-family: "Myriad-Pro"; font-weight: bold;}
+.f16 {font-size: .85vw; font-family: "Myriad-Pro"; font-weight: bold;}
+.f14 {font-size: .7vw; font-family: "Myriad-Pro"; font-weight: bold; line-height: 1vw;}
+.f12 {font-size: .6vw; font-family: "Myriad-Pro"; font-weight: bold; line-height: 1vw;}
+
+/* 색상 */
+.cp1 {color: #282c7c;}
+.cp2 {color: #3b65ff;}
+.cp3 {color: #8db9ff;}
+.cp4 {color: #c5ddff;}
+.cp5 {background-color: #FF884D;}
+.c1 {color: #3f3f3f;}
+.c2 {color: #434343;}
+.c3 {color: #636363;}
+.c4 {color: #868686;}
+/* 도움 */
+.logo{text-indent: -9999999px; background: url("../img/logo.png"); background-size: 100% 100%; width: 140px; height: 45px;}
+.btn { display:inline-flex;align-items: center; position: relative; overflow: hidden; cursor:pointer; padding:0 20px; height: 45px; text-align: center; font-weight: bold; background-color:#3b65ff; color: white; font-family: "맑은 고딕"; border-radius:45px; font-size:1vw;}
+.btn::after {content: ""; text-align: center;z-index: 1; position: absolute;transition: all 1s; width:0px;border-radius: 100%; height: 0;left: 50%; bottom: 0%; transform: translate(-50%, 50%); background-color: #FF884D; }
+.btn:hover::after {width:300px; height: 300px;}
+.btn span{z-index: 2; position: relative;}
+.tac{text-align: center;}
+.middle{display: inline-block;}
+.middle div{display: flex;}
+.middle p{white-space: nowrap;}
+.middle span{width: 100%; margin-left: 5px; height: 2px; background-color: #282c7c; display: inline-block;}
+/* 푸터 */
+footer{padding: 2vw; background-color: #3B65FF;} 
+footer img{height: 45px; width: 150px; } 
+footer p{color: white;}
