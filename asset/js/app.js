@@ -198,7 +198,7 @@ const buy = {
                     // 처음 아이템
                     $(".buy .items").append(`
                     <div class="cc">
-                        <div class="img" style="background:url('/asset/img/명물/${element.image}'); background-size: cover;"></div>
+                        <div class="img" style="background:url('./asset/img/명물/${element.image}'); background-size: cover;"></div>
                         <button class="btn" onclick="Modal.show('modal${count}'); buy.nut();"><span>장바구니 담기</span></button>
                         <p class="c1 mt2 f28">${element.name}</p>
                     </div>
@@ -257,7 +257,7 @@ const buy = {
         const geometry = new THREE.SphereGeometry(15, 32, 16);
         
         const material = new THREE.MeshStandardMaterial({
-            map: new THREE.TextureLoader().load("/asset/img/walnut-flat.png"),
+            map: new THREE.TextureLoader().load("./asset/img/walnut-flat.png"),
             side: THREE.DoubleSide,
         });
       
