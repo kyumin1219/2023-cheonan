@@ -1,0 +1,76 @@
+.canvasMap .item{position: absolute; width: 30px; border-radius: 50%; height: 30px;color: white; transition: all .5s; background-color: #3b65ff; text-align: center; line-height: 30px;}
+.canvasMap .item:hover{background-color: #ff884d;}
+.canvasMap .item1{top: 482px; left: 385px;}
+.canvasMap .item2{top: 505px; left: 570px;}
+.canvasMap .item3{top: 430px; left: 280px;}
+.canvasMap .item4{top: 331px; left: 355px;}
+.canvasMap .item5{top: 331px; left: 275px;}
+.canvasMap .item6{top: 264px; left: 260px;}
+.canvasMap .item7{top: 658px; left: 68px;}
+.canvasMap .item8{top: 68px; left: 230px;}
+.canvasMap .cc {position: absolute; padding: 10px; border-radius: 5px; background-color: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.234); opacity: 0; transition: all .5s;z-index: -10;}
+.canvasMap .cc img{width: 100px; height: 70px; object-fit: cover; border-radius: 5px;}
+.canvasMap .cc  p{width: 100px; margin-top: .25vw;}
+.canvasMap .pop1{top: 482px; left: 425px;}
+.canvasMap .pop2{top: 505px; left: 610px;}
+.canvasMap .pop3{top: 430px; left: 320px;}
+.canvasMap .pop4{top: 331px; left: 395px;}
+.canvasMap .pop5{top: 331px; left: 315px;}
+.canvasMap .pop6{top: 264px; left: 300px;}
+.canvasMap .pop7{top: 658px; left: 108px;}
+.canvasMap .pop8{top: 68px; left: 270px;}
+.canvasMap .item1:hover ~ .pop1{opacity: 1; z-index: 5;}
+.canvasMap .item2:hover ~ .pop2{opacity: 1; z-index: 5;}
+.canvasMap .item3:hover ~ .pop3{opacity: 1; z-index: 5;}
+.canvasMap .item4:hover ~ .pop4{opacity: 1; z-index: 5;}
+.canvasMap .item5:hover ~ .pop5{opacity: 1; z-index: 5;}
+.canvasMap .item6:hover ~ .pop6{opacity: 1; z-index: 5;}
+.canvasMap .item7:hover ~ .pop7{opacity: 1; z-index: 5;}
+.canvasMap .item8:hover ~ .pop8{opacity: 1; z-index: 5;}
+
+/* 투어 */
+.tour .box{width: 80%;}
+.tour .box1{padding: 70px;box-shadow: 0px 0px 10px rgb(182, 182, 182); border-radius: 40px;z-index: 3;position: relative;}
+.tour .box {position: relative;}
+.tour .box > p{font-weight: bold; position: absolute;}
+.tour .box .chart_tab{top: -99px; width: 330px;font-size: 21px;height: 100px;padding: 50px 0 0 50px; background: url("../img/B/1.png");background-size: cover;}
+.tour .box .chart_tab1{left: 50px; z-index: 1;}
+.tour .box .chart_tab2{left: 310px; z-index:0;}
+.tour .box .chart_tab.check{z-index: 10; color: #3b65ff; 
+    text-decoration: underline;
+    text-underline-offset:7px;
+    text-decoration-thickness: 3px;}
+.tour .box .name_tab{right: 0;}
+
+.tour .box .name{left: 100%;transition: all 1s; width: 300px;padding: 25px 0 0 20px; height: 80px; background: url("../img/B/2.png"); background-size: 100% 100%; transform: translateX(-10px);} 
+.tour .box .name.check{color: black; z-index:11;
+    text-decoration: underline;
+    text-decoration-color: #3b65ff;
+    text-underline-offset:7px;
+    text-decoration-thickness: 3px;}
+.tour .box .name0{top: 5%;}
+.tour .box .name1{top: 15%;}
+.tour .box .name2{top: 25%;}
+.tour .box .name3{top: 35%;}
+.tour .box .name4{top: 45%;}
+.tour .box .name5{top: 55%;}
+.tour .box .name6{top: 65%;}
+.tour .box .name7{top: 75%;}
+
+.tour .box .canvas1{ border: 1px solid #3b65ff;position: relative;display: inline-block; padding: 10px;}
+
+.tour .box .week{width: 50px; position: relative;margin-right: 30px;}
+.tour .box .week li{text-align: end;padding: 25px 0;}
+.tour .box .week .line{position: absolute; top: 0; width: 10px; border-radius: 10px; background-color: #d1d1d1; height: 100%;}
+.tour .box .week .line div{position: absolute; top: 0; left: 0; width: 100%; height: 15%; background-color: #3b65ff; border-radius: 10px;}
+.tour .box .week li.check{color: black;}
+
+/* buy */
+.buy .items{gap:30px;display:grid; grid-template-columns: repeat(5, 1fr);}
+.buy .items > div{display: inline-block;position: relative; padding: 2vw; width: 100%; height: 15vw; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); border-radius : 1.5vw;}
+.buy .items .img {width: 100%; height: 80%; border-radius: 1.5vw;}
+.buy .items .btn{position: absolute; opacity: 0;left:50%;top: 50%;transform: translateX(-50%); background-color: #ff884d; transition: all .5s;}
+.buy .items p{width: 100%; text-align: center; letter-spacing: -3px;}
+.buy .items .img:hover ~ .btn{ opacity: 1;}
+.buy .items .btn:hover{ opacity: 1;}
+.buy .items span{white-space: nowrap;}

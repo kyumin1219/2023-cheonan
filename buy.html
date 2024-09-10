@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./asset/css/app.css">
+    <!-- css -->
+    <!-- 스크립트 -->
+    <script src='/asset/js/chart.umd.min.js'></script>
+    <script src='/asset/js/jquery-3.5.1.min.js'></script>
+    <script src='/asset/js/three.min.js'></script>
+    <script  src="/asset/js/app.js"></script>
+    <!-- 스크립트 -->
+</head>
+<body class="buy">
+    <!-- 해더 -->
+    <header id="header">
+        <div class="container fb mt2">
+            <h1><a href="./index.html" class="logo">logo</a></h1>
+            <nav class="fb">
+                <ul class="main f21 fb">
+                    <li><a href="./mypage.html"><span></span>마이페이지</a></li>
+                    <li><a href="./stamp.html"><span></span>명소알아보기</a></li>
+                    <li><a href="./buy.html"><span></span>명물구매</a></li>
+                    <li><a href="./sub.html"><span></span>셔틀버스 투어</a></li>
+                </ul>
+                <ul class="sub f18 fb">
+                    <li><a href="./login.html"><span></span>로그인</a></li>
+                    <li class="aa"><span>|</span></li>
+                    <li><a href="./signup.html"><span></span>회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 헤더 -->
+    <!-- 콘텐트 -->
+    <main class="buy mt20">
+        <section class="cc">
+            <div class="container mt8">
+                <div class="middle">
+                    <h2 class="title3">SPECIALTY BUY</h2>
+                    <div class="f hc mts">
+                        <p class="f21 cp1" >명물구매</p>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- 아이템이 들어간다. -->
+                <div class="items f21 mt6">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(_=>{
+            // 명물 설정 함수
+            buy.init();
+        });
+    </script>
+    <!-- 콘텐트 -->
+    <footer class="cc">
+        <div class="container fb">
+            <img src="./asset/img/logo(footer).png" alt="img" title="img">
+            <div class="f18 mt1">
+                <p class="mts">Call: 1422-36</p>
+                <p class="mts">Email: help@cheonan.tour</p>
+                <p class="mts">Address: (31162) 충남 천안시 서북구 번영로 156</p>
+            </div>
+            <p class="mt6 f18">Copyrightⓒ Cheonan-Si. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 로딩 애니메이션 -->
+    <!-- 처음 호두과자만이 다른것들과 다르기 때문에 이렇게 따로 뺴져 있다. -->
+   <div class="Bmodal modal0" >
+        <div class="box">
+            <div class="fb">
+                <div class="middle">
+                    <h2 class="title3">WALNUT-FLAT</h2>
+                    <div class="f hc ">
+                        <p class="f21 cp1">호두과자</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn mt4" onclick="Modal.close();"><span>구매하기</span></button>
+                    <button class="btn mt4" onclick="Modal.close();"><span>닫기</span></button>
+                </div>
+            </div>
+            <div class="mt4" style="position: relative;">
+                <input type="range" id="volume1" name="volume" min="0" max="100" class="controle" style="right: 0;" />
+                <input type="range" id="volume2" name="volume" min="0" max="100" class="controle" />
+                <canvas id="myCanvas" style="width:100%;height:350px; border-radius: 40px;"></canvas>
+                
+                <p class="mt3 f18" style="margin-left:15px;">포인트 : <span id="point0"></span></p>
+                <div class="mts" id="text0" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 20px;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
