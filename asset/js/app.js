@@ -21,7 +21,7 @@ const tour = {
         // 막대그래프를 만든다.
         $.ajax({
             type: "GET",
-            url: "/asset/js/rush_hour_visitors.json",
+            url: "./asset/js/rush_hour_visitors.json",
             dataType: "json",
             success: function (response, textStatus, jqXHR) {
                 // 명소 이름 버튼을 초기화
@@ -101,7 +101,7 @@ const tour = {
         // 방사형그래프를 만든다.
         $.ajax({
             type: "GET",
-            url: "/asset/js/visitors.json",
+            url: "./asset/js/visitors.json",
             dataType: "json",
             success: function (response, textStatus, jqXHR) {
                 
@@ -189,7 +189,7 @@ const buy = {
     init(){
         $.ajax({
             type: "GET",
-            url: "/asset/js/specialties.json",
+            url: "./asset/js/specialties.json",
             dataType: "json",
             success: function (response, textStatus, jqXHR) {
                 console.log(response.data);
