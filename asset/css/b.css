@@ -74,3 +74,78 @@
 .buy .items .img:hover ~ .btn{ opacity: 1;}
 .buy .items .btn:hover{ opacity: 1;}
 .buy .items span{white-space: nowrap;}
+
+
+/* map */
+.map .box{width: 700px; height: 700px;position: relative;} 
+.map{width: 80%; padding: 14px; border-radius: 10px;}
+/* .hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;} */
+.map *{user-select: none;}
+.map .draw{ display: grid;position: absolute; width: 100%; height: 100%;}
+.map .draw:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.draw .big-box { width: 100%; height: 100%;margin: 0; display: grid; }
+
+.map .box .btns {position:absolute;top:10px;right:10px;z-index: 1201;}
+
+/* B 모듈 */
+.popMap .right {width: 40%; padding: 10px;}
+.popMap .right .items{padding: 10px; width: 100%; height: 20vw; background-color: #b1d2fc; border-radius: 10px; display: flex; flex-flow: column; gap:10px 0;}
+.popMap .right .items li{border-radius: 10px; width: 100%; background-color: rgb(245, 252, 253); padding: 5px; align-items: center;}
+
+a.active {text-decoration : line-through;}
+.Bookmark .btns{width: 80%;}
+.Bookmark .btns a{padding: 5px; border: solid 1px #b1d2fc; border-radius: 5px;}
+.Bookmark .btns a[strike] {text-decoration: line-through;}
+/* 안의 요소 */
+.poiWrap {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;}
+
+.poi {
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index: 1000;
+    cursor: pointer;}
+
+.spread {
+    padding: 10px;
+    /* width: 100px; */
+    white-space: nowrap;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+    border-radius: 10px;
+    position: absolute;
+    top: 105%;
+    gap: 5px 0;}
+
+.spread a {font-size: 12px;
+    border:1px solid #444444;
+    border-radius:3px;
+    padding:3px;
+    display: none;}
+
+.point {z-index: 13;width: 25px;}
+.poi.active .spread a {display: block;}
+
+#dc,
+#ddc {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
