@@ -289,7 +289,7 @@ let commonData = {
     
     load(_callback) {
         commonData.orgData = [];
-        $.getJSON('/asset/js/attraction.json', function(a) {
+        $.getJSON('./asset/js/attraction.json', function(a) {
             commonData.labels_kr = [...a.labels_kr];
             commonData.labels_en = [...a.labels_en];
 
@@ -707,7 +707,7 @@ const indexMap = {
 
             $('.poiWrap').append(`
                 <div class="poi cc" data-idx="${val.idx != undefined ? val.idx : key}" style="left:${left}%; top:${top}%;">
-                    <img src="/asset/img/point.png" class="point" alt="">
+                    <img src="./asset/img/point.png" class="point" alt="">
                     <div class="spread cc">
                         <p>${val.garden == 'user' ? '현위치' : val.garden}</p>
                         ${ val.garden != 'user' ? `<a href="#">즐겨찾기 추가</a>` : ''}
